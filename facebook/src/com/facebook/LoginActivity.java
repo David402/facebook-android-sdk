@@ -19,6 +19,7 @@ package com.facebook;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import com.facebook.android.R;
 
@@ -38,6 +39,7 @@ import com.facebook.android.R;
 public class LoginActivity extends Activity {
     static final String RESULT_KEY = "com.facebook.LoginActivity:Result";
 
+    private static final String TAG = LoginActivity.class.getName();
     private static final String NULL_CALLING_PKG_ERROR_MSG =
             "Cannot call LoginActivity with a null calling package. " +
                     "This can occur if the launchMode of the caller is singleInstance.";
